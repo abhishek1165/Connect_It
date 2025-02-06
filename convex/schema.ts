@@ -33,4 +33,4 @@ export default defineSchema({
  }).index("by_interview_id",["interviewId"]),
 
 });
-//https://precise-leech-31.clerk.accounts.dev
+//https:precise-leech-31.clerk.accounts.dev
