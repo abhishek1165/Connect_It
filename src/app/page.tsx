@@ -6,11 +6,7 @@ import { use } from "react";
 
 export default function Home() {
   return (
-    <SignedOut>
-   <SignInButton>
-
-    <Button>Sign In</Button>
-   </SignInButton>
-   </SignedOut>
+    
+   <div className="m-10"> Home Page</div>
   );
 }
