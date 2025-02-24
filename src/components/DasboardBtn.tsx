@@ -10,12 +10,14 @@ function DasboardBtn() {
   const{isCandidate, isLoding} = useUserRole();
 
   if(isCandidate  || isLoding) return (null);
-  return <Link href={"/dashboard"}>
+  return( 
+  <Link href={"/dashboard"}>
     <Button className=" gap-2 font-medium " size={"sm"} >
       <SparkleIcon className="size-8 " />
       Dashbord
     </Button>
   </Link>
+  );
    
 }
 
