@@ -9,6 +9,7 @@ import { useQuery } from "convex/react";
 import { api } from "../../../../convex/_generated/api";
 import { useRouter } from "next/navigation";
 import MeetingModal from "@/components/MeetingModal";
+import LoaderUI from "@/components/LoaderUI";
 export default function Home() {
   const router = useRouter();
   const { isInterviewer, isCandidate, isLoding } = useUserRole();
@@ -31,7 +32,7 @@ export default function Home() {
     }
   };
 
-  if(isLoding) return<p>Loding...</p>
+  if(isLoding) return<LoaderUI/>
 
   return (
     <div className="container max-w-7xl mx-auto p-6">
