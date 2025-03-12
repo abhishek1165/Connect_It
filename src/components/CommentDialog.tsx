@@ -29,8 +29,8 @@ function CommentDialog({ interviewId }: { interviewId: Id<"interviews"> }) {
 
   const addComment = useMutation(api.comments.addComment);
   const users = useQuery(api.users.getUser);
-//   const existingComments = useQuery(api.comments.getComments, { interviewId });
-const existingComments = useQuery(api.comments.getComments, { interviwerId: interviewId });
+  const existingComments = useQuery(api.comments.getComments, { interviewId });
+// const existingComments = useQuery(api.comments.getComments, { interviwerId: interviewId });
 
 
   const handleSubmit = async () => {
